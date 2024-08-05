@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/4846dd2466.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    
 </head>
 <body>
     <div id="header">
@@ -17,7 +18,7 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">My Projects</a></li>
-                    <li><a href="#portfolio">Online Platforms</a></li>
+                    <li><a href="#portfolio">Coding Platforms</a></li>
                     <li><a href="#contact">contact</a></li>
                     
                 </ul>
@@ -28,7 +29,7 @@
             </div>
         </div>
     </div>
-    <!----------------------------------------------------------------------------------------about----------------------------------------------------------------------->
+    
     <div id="about">
         <div class="container">
             <div class="row">
@@ -66,7 +67,7 @@
                             </ul>
                         </div>
                         <div class="tab-contents" id="resume">    
-                        <button class="btn"><a href="Madhu.Nedunuri.pdf">Download Resume</a></button>
+                        <button class="btn"><a href="https://drive.google.com/file/d/10IQyKkAySNgv_DOXqp4eBY0gRSNyvn3r/view?usp=drive_link">Download Resume</a></button>
                         </div>
                         
                 </div>
@@ -74,8 +75,8 @@
 
         </div>
     </div>
-    <!----------------------------------------------------------------------------------------Projects----------------------------------------------------------------------->
     <div id="projects">
+    
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="projects-List">
@@ -83,7 +84,7 @@
                     <i class="fa-brands fa-uber"></i>
                     <h2>Uber Clone</h2>
                     <p>This web application is build by using HTML,CSS and JavaScript.We used VS code to build project</p>
-                    <a href="https://github.com/nmvsd3/uber_clone"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://nmvsd3.github.io/uber_clone/"><i class="fa-solid fa-link"></i></a>
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -103,10 +104,11 @@
 
         </div>
     </div>
-    <!----------------------------------------------------------------------------------------Online Platforms----------------------------------------------------------------------->
+
+   
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">Online Platforms</h1>
+            <h1 class="sub-title">Coding Platforms</h1>
             <div class="portfolio-List">
                 <div>
                     <i class="fa-brands fa-hackerrank"></i>
@@ -147,7 +149,7 @@
 
         </div>
     </div>
-    <!----------------------------------------------------------------------------------------Contact----------------------------------------------------------------------->
+    
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -169,6 +171,7 @@
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                 </form>
             </div>
         </div>
@@ -199,5 +202,26 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script>
+
+        let mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 </html>
